@@ -29,7 +29,7 @@ from scipy import io
 import matplotlib.pyplot as plt
 import numpy as np
 
-mat_file = io.loadmat('./mixoutALL_shifted.mat')
+mat_file = io.loadmat('./Data/mixoutALL_shifted.mat')
 
 # print(mat_file['consts'].dtype)
 consts = mat_file['consts'][0,0]
@@ -111,10 +111,11 @@ def get_observation(disp):
         angle[i] = np.arctan2(acc[i][0], acc[i][1])
         if angle[i] < 0:
             angle[i] += 2 * np.pi
-        obs[i] = int((angle[i] / np.pi * 3) % 6) + int((vel_angle[i] / np.pi * 2) % 4) * 6
+        # obs[i] = int((angle[i] / np.pi * 3) % 6) + int((vel_angle[i] / np.pi * 2) % 4) * 6
+        obs[i] = int((vel_angle[i] / np.pi * 3) % 6)
     return (time, vel, acc, angle, obs)
 
-num_features = 24
+num_features = 6
 features = np.empty(num_mixouts, dtype=object)
 prev = None
 for i in range(0, num_mixouts, 1):
