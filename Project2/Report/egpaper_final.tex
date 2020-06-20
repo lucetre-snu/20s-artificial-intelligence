@@ -7,6 +7,10 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{kotex}
+\usepackage{pifont}
+
+\newcommand*\OK{\checkmark}
+\newcommand*\BOLDOK{\ding{51}}
 
 % Include other packages here, before hyperref.
 
@@ -98,23 +102,74 @@ From acceleration observation data, we can apparently determine the direction of
 Inferring from the name of our proposed model \texttt{jerk8vel8iter50}, it has 8 jerk states and 8 of those in angular velocity, which is simply determined by signs of vector coordinates. Feature metric is only the measure multiply with these two. For instances, if signs of jerk and angular velocity are $(+,-,+)$ and $(-,-,+)$ each, the measure will be 20 because the state of jerk would be 4(E) and that of angular velocity would be 5(F).
 
 \subsection{Multinomial HMM}
-Using model selection package in sklearn \cite{sklearn}, original set was split into train and test data. Every data entity has its feature metric which will be the observation input to HMM model $\lambda$. We differentiated into 12 models by activity types and each model learns corresponding activity and classifies test data set with one vs rest method (OVR) with maximum likelihood. 
+Using model selection package in sklearn \cite{sklearn}, original set was split into train and test data. Every data entity has its feature metric which will be the observation input to HMM model $\lambda$. We differentiated into 12 models by activity types and each model learns corresponding activity and classifies test data set with one vs rest method (OVR) with maximum likelihood. \texttt{jerk8vel8iter50} was trained with maximum iterations of 50.
 
-As observation values are all in discrete number, Multinomial HMM from \textit{hmmlearn} was selected and values of hyper-parameters were determined through various empirical approaches. We've finally got \texttt{jerk8vel8iter50} model with 00.00\% test accuracy and 00000s total training time. Figures below show a table of 12 models' training time, and some of examples when estimates went wrong.
+As observation values are all in discrete number, Multinomial HMM from \textit{hmmlearn} was selected and values of hyper-parameters were determined through various empirical approaches. We've finally got \texttt{jerk8vel8iter50} model with 92.62\% as test accuracy and 24623.64s as total training time. Figures below show a table of 12 models' training time, and some of examples when estimates went wrong. 9 misclassified actions out of 122 examples were detected and plotted how does these pairs differ in state sequences.
+
+{\centering
+\begin{tabular}{ p{4cm}  p{2.3cm}  p{2cm} }
+ \hline
+ \multicolumn{3}{c}{\texttt{jerk8vel8iter50}} \\
+ \hline
+ \centering
+ Action Types & Log Likelihood & Training Time \\
+ \hline
+ WALKING &   -202473.76  & 3876.99s \\
+ WALKING UPSTAIRS & -140582.82 & 3704.82s \\
+ WALKING DOWNSTAIRS & -186022.69 & 3408.61s \\
+ SITTING & -156591.76 & 3681.86s \\
+ STANDING & -161618.97 & 4011.79s \\
+ LAYING & -188243.51 & 3956.03s \\
+ STAND TO SIT & -8980.82 & 305.05s \\
+ SIT TO STAND & -6546.16 & 221.56s \\
+ SIT TO LIE & -11448.79 & 370.29s \\
+ LIE TO SIT & -9051.13 & 331.27s \\
+ STAND TO LIE & -14043.55 & 428.47s \\
+ LIE TO STAND & -10045.41 & 326.90s \\
+ \hline
+\end{tabular}
+
+\begin{center}
+\includegraphics[width=1\linewidth]{./Wrong.png}
+\end{center}
+}
 
 %-------------------------------------------------------------------------
 \section{Empirical Analysis}
 
-Here we describes how we came up with \texttt{jerk8vel8iter50} model. 
+Here we describes how we came up with \texttt{jerk8vel8iter50} model. And this is the table of comparison in 1-iteration trained models in aspect of test accuracy.
+
+{\centering
+\begin{tabular}{ p{3cm}| ccc | c}
+ \hline
+ Model Name & jerk $j$ & acc $a$ & vel $\alpha$ & Accuracy \\
+ \hline
+ \texttt{jerk8} & \OK & & & 50.81\% \\
+ \texttt{acc8} & & \OK & & 35.24\% \\
+ \texttt{vel8} & & & \OK & 60.65\% \\
+ \texttt{acc8vel8} & & \OK & \OK & 78.68\% \\
+ \texttt{jerk8acc8} & \OK & \OK & & 40.16\% \\
+ \texttt{jerk2vel8} & \OK & & \OK & 63.93\% \\
+ \texttt{jerk4vel8} & \OK & & \OK & 79.50\% \\
+ \texttt{\textbf{jerk8vel8}} & \BOLDOK & & \BOLDOK & \textbf{84.42\%} \\
+ \texttt{jerk8acc2vel8} & \OK & \OK & \OK & 63.11\% \\
+ \hline
+\end{tabular}
+}
 
 \subsection{Feature Metric Approach}
-When deciding what feature metric would be suitable, we've compared many different models trained for 1 iteration and chose the metric of the model with best test accuracy.
+When deciding what feature metric would be suitable, we've compared many different models trained for 1 iteration and chose the metric of the model with best test accuracy. From the table above, we've found angular velocity data measured from gyro sensor and jerk data were the significant classifiers in this approach. In conclusion, using \texttt{jerk8vel8} model was the best.
 
-\subsection{Iteration Approach}
+\subsection{Model Complexity Approach}
+When we construct HMM model with too many states, there can be over-fitting issues that our model only estimates trained data accurately but not test data. By differing number of observation states, we've found out the model having the best complexity would also be \texttt{jerk8vel8}.
 
 %-------------------------------------------------------------------------
 \section{Conclusion}
+Understanding human behaviour using sensor models needs temporally learning models since the dataset is also time-serial. Many other works determining human action recognition uses RNN models like LSTM, probabilistic models like particle filter or in hybrid. We've constructed HMM model simply learning the observation patterns from HAR dataset produced by Jorge L, \etal.
 
+Dataset includes 1,214 instances of 12 human actions and provides acceleration and angular velocity vectors. Feature extraction in acceleration and angular velocity vector was to splitting its direction into 8 sections, numbered them and use to define observation states. With empirical approaches, we've figured out \texttt{jerk8vel8} having appropriate model complexity and high test accuracy as well.
+
+We've trained this model with maximum training iteration of 50 and \texttt{jerk8vel8iter50} showed remarkable performance of 92.62\% as the test accuracy and 24623.64s as the training time. In future works, we'll improve our model with numerous instances created from more experiments and use other additional sensors to extract various states features.
 
 \begin{thebibliography}{9}
 

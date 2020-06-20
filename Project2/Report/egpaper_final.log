@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.14)  20 JUN 2020 04:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.14)  20 JUN 2020 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,6 +534,18 @@ File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
 (/usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -654,29 +666,29 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./egpaper_final.aux)
 \openout1 = `egpaper_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 30.
 LaTeX Font Info:    Try loading font information for LUC+nanummj on input line 
-26.
+30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -722,7 +734,7 @@ e
 ))
 \AtBeginShipoutBox=\box31
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -732,40 +744,40 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 
-Underfull \hbox (badness 1466) in paragraph at lines 49--50
+Underfull \hbox (badness 1466) in paragraph at lines 53--54
 \OT1/ptm/m/n/10 com-pris-ing of three main mod-ules: fea-ture ex-trac-tion,
  []
 
 <./HMM.png, id=11, 2491.3075pt x 668.4975pt>
 File: ./HMM.png Graphic file (type png)
 <use ./HMM.png>
-Package pdftex.def Info: ./HMM.png  used on input line 57.
+Package pdftex.def Info: ./HMM.png  used on input line 61.
 (pdftex.def)             Requested size: 237.13594pt x 63.63033pt.
 
-Underfull \hbox (badness 2173) in paragraph at lines 64--65
+Underfull \hbox (badness 2173) in paragraph at lines 68--69
 []\OT1/ptm/m/n/10 1) Like-li-hood: given the model $\OML/cmm/m/it/10 ^^U$\OT1/p
 tm/m/n/10 , find like-li-hood
  []
@@ -773,7 +785,7 @@ tm/m/n/10 , find like-li-hood
 <./forward.png, id=12, 1227.58624pt x 668.4975pt>
 File: ./forward.png Graphic file (type png)
 <use ./forward.png>
-Package pdftex.def Info: ./forward.png  used on input line 73.
+Package pdftex.def Info: ./forward.png  used on input line 77.
 (pdftex.def)             Requested size: 237.13594pt x 129.12733pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -782,7 +794,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
  <./HMM.png>]
-Underfull \hbox (badness 2617) in paragraph at lines 83--84
+Underfull \hbox (badness 2617) in paragraph at lines 87--88
 \OT1/ptm/m/n/10 method, \OT1/pcr/m/n/10 jerk8vel8iter50\OT1/ptm/m/n/10 . Fea-tu
 re ex-trac-tion and
  []
@@ -790,57 +802,94 @@ re ex-trac-tion and
 <./coordinate.png, id=38, 236.3229pt x 237.7683pt>
 File: ./coordinate.png Graphic file (type png)
 <use ./coordinate.png>
-Package pdftex.def Info: ./coordinate.png  used on input line 89.
+Package pdftex.def Info: ./coordinate.png  used on input line 93.
 (pdftex.def)             Requested size: 118.56796pt x 119.29381pt.
 <./jerk.png, id=40, 798.985pt x 164.615pt>
 File: ./jerk.png Graphic file (type png)
 <use ./jerk.png>
-Package pdftex.def Info: ./jerk.png  used on input line 95.
+Package pdftex.def Info: ./jerk.png  used on input line 99.
 (pdftex.def)             Requested size: 142.283pt x 29.31293pt.
 
-Underfull \hbox (badness 3838) in paragraph at lines 98--99
+Underfull \hbox (badness 3838) in paragraph at lines 102--103
 []\OT1/ptm/m/n/10 Inferring from the name of our pro-posed model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Overfull \hbox (35.022pt too wide) in paragraph at lines 110--131
+ [][] 
+ []
+
+<./Wrong.png, id=42, 706.64pt x 943.525pt>
+File: ./Wrong.png Graphic file (type png)
+<use ./Wrong.png>
+Package pdftex.def Info: ./Wrong.png  used on input line 133.
+(pdftex.def)             Requested size: 237.13594pt x 316.63351pt.
+
+Underfull \vbox (badness 3514) has occurred while \output is active []
+
+ [2 <./forward.png> <./coordinate.png> <./jerk.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 []\OT1/ptm/m/n/10 Here we de-scribes how we came up with
  []
 
-[2 <./forward.png> <./coordinate.png> <./jerk.png>]
-Underfull \hbox (badness 1577) in paragraph at lines 137--140
+
+Underfull \hbox (badness 1158) in paragraph at lines 140--141
+\OT1/pcr/m/n/10 jerk8vel8iter50 \OT1/ptm/m/n/10 model. And this is the ta-ble o
+f
+ []
+
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 154.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
+
+Overfull \hbox (11.23207pt too wide) in paragraph at lines 143--159
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--159
+
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 192--195
 []\OT1/ptm/m/n/10 Jorge L. Reyes-Ortiz, Da-vide An-guita, Alessan-dro
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-[3
+[3 <./Wrong.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+ [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 166.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 6909 strings out of 492982
- 97268 string characters out of 6134896
- 190403 words of memory out of 5000000
- 10321 multiletter control sequences out of 15000+600000
- 22148 words of font info for 59 fonts, out of 8000000 for 9000
+ 6963 strings out of 492982
+ 98047 string characters out of 6134896
+ 193968 words of memory out of 5000000
+ 10359 multiletter control sequences out of 15000+600000
+ 24979 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,26p,960b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,26p,960b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (3 pages, 322466 bytes).
+type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
+ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on egpaper_final.pdf (4 pages, 470277 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 28 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
